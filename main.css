@@ -1,5 +1,6 @@
 body {
-    font-family: Montserrat, sans-serif
+    /*font-family: Montserrat, sans-serif*/
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .jshop-header {
     height: 100px;
