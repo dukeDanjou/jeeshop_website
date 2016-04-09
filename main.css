@@ -16,30 +16,52 @@ header.jshop-header {
     background-color: #FFFFFF;
     box-sizing: border-box;
     padding: 25px 0 25px 0;
-    text-align: center;
+    position: fixed;
 }
 
 header.jshop-header >div{
-    width: 50%;
+    width: 80%;
     margin: auto;
 }
 
-nav.jshop-nav{
+header.jshop-header a,span{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #80C2D9;
+}
+
+header.jshop-header a:hover,span:hover{
+    color: lightgrey;
+    cursor: pointer;
+}
+
+header.jshop-header a.title{
+    float: left;
     height: 60px;
+    line-height: 55px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+nav.jshop-nav{
     display: block;
-    padding: 15px 0 15px 0;
     box-sizing: border-box;
     float: right;
 }
 
-nav.jshop-nav div{
+nav.jshop-nav > div{
     display: inline-block;
 }
 
-nav.jshop-nav a{
-    font-size: bold;
-    text-decoration: none;
+nav.jshop-nav a,span{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+nav.jshop-nav > a,span{
     margin-right: 30px;
+    height: 60px;
+    line-height: 60px;
 }
 
 #jshop-header-logo {
@@ -50,9 +72,28 @@ nav.jshop-nav a{
 }
 
 section.first{
-    padding-top: 100px;
+    padding-top: 160px;
     height: 780px;
     background-color: #80C2D9;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a{
+    padding: 10px 10px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
